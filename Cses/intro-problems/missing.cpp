@@ -1,32 +1,15 @@
 #include <iostream>
-int main (int argc, char *argv[]) {
-  long int n;
-  std::cin >> n ;
-  int arr[n-1];
-  int temp[n];
-  for (int i = 0; i < n - 1; i++) {
-    std::cin >> arr[i];
 
-  }
-  for (int i = 0; i < n; i++) {
-   temp[i] = i + 1;
-  }
-    
-  for (int i = 0; i < n-1 ; i++) {
-    for (int j = 0; j < n; j++) {
-      if (arr[i] == temp[j] ) {
-        temp[j] = -1;
-      }
-    }
-  }
-
-  for (int i = 0; i < n-1; i++) {
-    if(temp[i] != -1){
-      std::cout << temp[i]; 
-    }
-  }
-  std::cout << "\n";
-  return 0;
+int main(){
+	int size;
+	std::cin >> size;
+	long long sumN1 = 0 ;
+	long long sumN = static_cast<long long>(size) * (size + 1)/2;
+	for(int i = 0 ; i < size - 1 ; i++){
+		int num ;
+		std::cin >> num;
+		sumN1 +=num; 
+	}
+	std::cout << sumN - sumN1 ;
+	return 0;
 }
-
-
