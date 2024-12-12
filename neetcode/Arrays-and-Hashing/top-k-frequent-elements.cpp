@@ -37,7 +37,6 @@ public:
         maxValue = it.second;
       }
     }
-    std::cout << "Max = " << maxKey << " " << maxValue << '\n';
     return maxKey;
   }
 };
