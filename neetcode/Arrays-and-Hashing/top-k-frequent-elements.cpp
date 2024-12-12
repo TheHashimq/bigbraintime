@@ -42,11 +42,3 @@ public:
   }
 };
 
-int main() {
-  std::vector<int> nums = {1, 1, 1, 2, 2, 3};
-  Solution s;
-  std::vector<int> out = s.topKFrequent(nums, 2);
-  for (const auto &v : out) {
-    std::cout << v << ' ';
-  }
-}
