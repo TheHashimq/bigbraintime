@@ -15,10 +15,6 @@ public:
         list[v] = 1;
       }
     }
-
-    for (const auto &v : list) {
-      std::cout << v.first << " " << v.second << '\n';
-    }
     while (k > 0) {
       int max = getMaxValue(list);
       num.push_back(max);
